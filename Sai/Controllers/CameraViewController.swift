@@ -32,6 +32,7 @@ class CameraViewController: UIViewController {
         cameraView.frame = view.frame
         
         setupDevice()
+        setupInputOutput()
     }
     
     override func viewDidLayoutSubviews() {
@@ -49,7 +50,7 @@ class CameraViewController: UIViewController {
             return
         }
         
-        setupInputOutput()
+        startSession()
         checkAuthorize()
     }
     
@@ -125,18 +126,23 @@ extension CameraViewController: AVCaptureVideoDataOutputSampleBufferDelegate {
             if captureSession.canAddOutput(videoOutput) {
                 captureSession.addOutput(videoOutput)
             }
-            
-            DispatchQueue.global(qos: .background).async {
-                self.captureSession.startRunning()
-            }
         } catch {
-            print(error)
+            loggerObject("setupInputOutput Error", error)
+        }
+    }
+    
+    func startSession() {
+        
+        DispatchQueue.global(qos: .background).async {
+            self.captureSession.startRunning()
         }
     }
     
     func stopSession() {
         
-        self.captureSession.stopRunning()
+        DispatchQueue.global(qos: .background).async {
+            self.captureSession.stopRunning()
+        }
     }
     
     func setupCorrectFramerate(currentCamera: AVCaptureDevice) {
@@ -154,8 +160,7 @@ extension CameraViewController: AVCaptureVideoDataOutputSampleBufferDelegate {
                 }
             }
             catch {
-                print("Could not set active format")
-                print(error)
+                loggerObject("Could not set active format", error)
             }
         }
     }

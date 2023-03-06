@@ -39,13 +39,13 @@ class SettingViewController: UIViewController {
 
     func setupUI() {
         
-        let red = Float(colorDataManager.redFilterValue ?? 1) * 100
-        let green = Float(colorDataManager.greenFilterValue ?? 1) * 100
-        let blue = Float(colorDataManager.blueFilterValue ?? 1) * 100
+        let red = Float(colorDataManager.redFilterValue ?? 1)
+        let green = Float(colorDataManager.greenFilterValue ?? 1)
+        let blue = Float(colorDataManager.blueFilterValue ?? 1)
         
-        redPercentLabel.text = String(format: "%.1f", red) + "%"
-        greenPercentLabel.text = String(format: "%.1f", green) + "%"
-        bluePercentLabel.text = String(format: "%.1f", blue) + "%"
+        redPercentLabel.text = String(format: "%.1f", red * 100) + "%"
+        greenPercentLabel.text = String(format: "%.1f", green * 100) + "%"
+        bluePercentLabel.text = String(format: "%.1f", blue * 100) + "%"
         
         redSlider.setValue(red, animated: false)
         greenSlider.setValue(green, animated: false)
