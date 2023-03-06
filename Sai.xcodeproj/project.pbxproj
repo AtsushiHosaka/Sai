@@ -7,23 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D1B8B6429B585AD00085A47 /* ZenKakuGothicNew-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6D1B8B5E29B585AD00085A47 /* ZenKakuGothicNew-Bold.ttf */; };
+		6D1B8B6529B585AD00085A47 /* ZenKakuGothicNew-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6D1B8B5F29B585AD00085A47 /* ZenKakuGothicNew-Light.ttf */; };
+		6D1B8B6629B585AD00085A47 /* ZenKakuGothicNew-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6D1B8B6029B585AD00085A47 /* ZenKakuGothicNew-Medium.ttf */; };
+		6D1B8B6729B585AD00085A47 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 6D1B8B6129B585AD00085A47 /* OFL.txt */; };
+		6D1B8B6829B585AD00085A47 /* ZenKakuGothicNew-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6D1B8B6229B585AD00085A47 /* ZenKakuGothicNew-Black.ttf */; };
+		6D1B8B6929B585AD00085A47 /* ZenKakuGothicNew-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6D1B8B6329B585AD00085A47 /* ZenKakuGothicNew-Regular.ttf */; };
+		6D1B8B7029B5B35F00085A47 /* ColorDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1B8B6F29B5B35F00085A47 /* ColorDataManager.swift */; };
+		6D1B8B7329B5B95000085A47 /* PKHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 6D1B8B7229B5B95000085A47 /* PKHUD */; };
+		6D1B8B7529B5C0E800085A47 /* SegueKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1B8B7429B5C0E800085A47 /* SegueKey.swift */; };
+		6D1B8B7729B5C4EE00085A47 /* logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1B8B7629B5C4EE00085A47 /* logger.swift */; };
 		6D37457529B1995600843CA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D37457429B1995600843CA3 /* AppDelegate.swift */; };
 		6D37457729B1995600843CA3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D37457629B1995600843CA3 /* SceneDelegate.swift */; };
-		6D37457929B1995600843CA3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D37457829B1995600843CA3 /* ViewController.swift */; };
+		6D37457929B1995600843CA3 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D37457829B1995600843CA3 /* CameraViewController.swift */; };
 		6D37457C29B1995600843CA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D37457A29B1995600843CA3 /* Main.storyboard */; };
 		6D37457E29B1995700843CA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D37457D29B1995700843CA3 /* Assets.xcassets */; };
 		6D37458129B1995700843CA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D37457F29B1995700843CA3 /* LaunchScreen.storyboard */; };
+		6D6FAE8529B58303006B2868 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6FAE8429B58303006B2868 /* SettingViewController.swift */; };
+		6D6FAE8729B5831C006B2868 /* EditPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D6FAE8629B5831C006B2868 /* EditPhotoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6D1B8B5E29B585AD00085A47 /* ZenKakuGothicNew-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ZenKakuGothicNew-Bold.ttf"; sourceTree = "<group>"; };
+		6D1B8B5F29B585AD00085A47 /* ZenKakuGothicNew-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ZenKakuGothicNew-Light.ttf"; sourceTree = "<group>"; };
+		6D1B8B6029B585AD00085A47 /* ZenKakuGothicNew-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ZenKakuGothicNew-Medium.ttf"; sourceTree = "<group>"; };
+		6D1B8B6129B585AD00085A47 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		6D1B8B6229B585AD00085A47 /* ZenKakuGothicNew-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ZenKakuGothicNew-Black.ttf"; sourceTree = "<group>"; };
+		6D1B8B6329B585AD00085A47 /* ZenKakuGothicNew-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ZenKakuGothicNew-Regular.ttf"; sourceTree = "<group>"; };
+		6D1B8B6F29B5B35F00085A47 /* ColorDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorDataManager.swift; sourceTree = "<group>"; };
+		6D1B8B7429B5C0E800085A47 /* SegueKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueKey.swift; sourceTree = "<group>"; };
+		6D1B8B7629B5C4EE00085A47 /* logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logger.swift; sourceTree = "<group>"; };
 		6D37457129B1995600843CA3 /* Sai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sai.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D37457429B1995600843CA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6D37457629B1995600843CA3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6D37457829B1995600843CA3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6D37457829B1995600843CA3 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		6D37457B29B1995600843CA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6D37457D29B1995700843CA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6D37458029B1995700843CA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6D37458229B1995700843CA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D6FAE8429B58303006B2868 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		6D6FAE8629B5831C006B2868 /* EditPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPhotoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,12 +54,68 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D1B8B7329B5B95000085A47 /* PKHUD in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6D1B8B5D29B585AD00085A47 /* Zen_Kaku_Gothic_New */ = {
+			isa = PBXGroup;
+			children = (
+				6D1B8B5E29B585AD00085A47 /* ZenKakuGothicNew-Bold.ttf */,
+				6D1B8B5F29B585AD00085A47 /* ZenKakuGothicNew-Light.ttf */,
+				6D1B8B6029B585AD00085A47 /* ZenKakuGothicNew-Medium.ttf */,
+				6D1B8B6129B585AD00085A47 /* OFL.txt */,
+				6D1B8B6229B585AD00085A47 /* ZenKakuGothicNew-Black.ttf */,
+				6D1B8B6329B585AD00085A47 /* ZenKakuGothicNew-Regular.ttf */,
+			);
+			path = Zen_Kaku_Gothic_New;
+			sourceTree = "<group>";
+		};
+		6D1B8B6A29B585B200085A47 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				6D1B8B5D29B585AD00085A47 /* Zen_Kaku_Gothic_New */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		6D1B8B6E29B5AD9100085A47 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6D1B8B7929B5C51300085A47 /* Helpers */,
+				6D1B8B7829B5C50800085A47 /* Data */,
+				6D1B8B7A29B5C51A00085A47 /* Debug */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6D1B8B7829B5C50800085A47 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				6D1B8B6F29B5B35F00085A47 /* ColorDataManager.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		6D1B8B7929B5C51300085A47 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6D1B8B7429B5C0E800085A47 /* SegueKey.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		6D1B8B7A29B5C51A00085A47 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				6D1B8B7629B5C4EE00085A47 /* logger.swift */,
+			);
+			path = Debug;
+			sourceTree = "<group>";
+		};
 		6D37456829B1995600843CA3 = {
 			isa = PBXGroup;
 			children = (
@@ -58,13 +137,33 @@
 			children = (
 				6D37457429B1995600843CA3 /* AppDelegate.swift */,
 				6D37457629B1995600843CA3 /* SceneDelegate.swift */,
-				6D37457829B1995600843CA3 /* ViewController.swift */,
-				6D37457A29B1995600843CA3 /* Main.storyboard */,
+				6D1B8B6E29B5AD9100085A47 /* Models */,
+				6D6FAE8229B582BF006B2868 /* Controllers */,
+				6D6FAE8329B582C7006B2868 /* Views */,
+				6D1B8B6A29B585B200085A47 /* Fonts */,
 				6D37457D29B1995700843CA3 /* Assets.xcassets */,
 				6D37457F29B1995700843CA3 /* LaunchScreen.storyboard */,
 				6D37458229B1995700843CA3 /* Info.plist */,
 			);
 			path = Sai;
+			sourceTree = "<group>";
+		};
+		6D6FAE8229B582BF006B2868 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6D37457829B1995600843CA3 /* CameraViewController.swift */,
+				6D6FAE8429B58303006B2868 /* SettingViewController.swift */,
+				6D6FAE8629B5831C006B2868 /* EditPhotoViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6D6FAE8329B582C7006B2868 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6D37457A29B1995600843CA3 /* Main.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +182,9 @@
 			dependencies = (
 			);
 			name = Sai;
+			packageProductDependencies = (
+				6D1B8B7229B5B95000085A47 /* PKHUD */,
+			);
 			productName = Sai;
 			productReference = 6D37457129B1995600843CA3 /* Sai.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +213,9 @@
 				Base,
 			);
 			mainGroup = 6D37456829B1995600843CA3;
+			packageReferences = (
+				6D1B8B7129B5B95000085A47 /* XCRemoteSwiftPackageReference "PKHUD" */,
+			);
 			productRefGroup = 6D37457229B1995600843CA3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,6 +230,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D1B8B6729B585AD00085A47 /* OFL.txt in Resources */,
+				6D1B8B6829B585AD00085A47 /* ZenKakuGothicNew-Black.ttf in Resources */,
+				6D1B8B6929B585AD00085A47 /* ZenKakuGothicNew-Regular.ttf in Resources */,
+				6D1B8B6629B585AD00085A47 /* ZenKakuGothicNew-Medium.ttf in Resources */,
+				6D1B8B6529B585AD00085A47 /* ZenKakuGothicNew-Light.ttf in Resources */,
+				6D1B8B6429B585AD00085A47 /* ZenKakuGothicNew-Bold.ttf in Resources */,
 				6D37458129B1995700843CA3 /* LaunchScreen.storyboard in Resources */,
 				6D37457E29B1995700843CA3 /* Assets.xcassets in Resources */,
 				6D37457C29B1995600843CA3 /* Main.storyboard in Resources */,
@@ -138,9 +249,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D37457929B1995600843CA3 /* ViewController.swift in Sources */,
+				6D37457929B1995600843CA3 /* CameraViewController.swift in Sources */,
+				6D1B8B7529B5C0E800085A47 /* SegueKey.swift in Sources */,
+				6D6FAE8729B5831C006B2868 /* EditPhotoViewController.swift in Sources */,
 				6D37457529B1995600843CA3 /* AppDelegate.swift in Sources */,
+				6D1B8B7029B5B35F00085A47 /* ColorDataManager.swift in Sources */,
 				6D37457729B1995600843CA3 /* SceneDelegate.swift in Sources */,
+				6D6FAE8529B58303006B2868 /* SettingViewController.swift in Sources */,
+				6D1B8B7729B5C4EE00085A47 /* logger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,11 +406,14 @@
 				DEVELOPMENT_TEAM = 93LJ9T3CBB;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Sai/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "このアプリはカメラを使用します";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "アルバムへ写真を書き込みます";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "アルバムから写真を読み込みます";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +421,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = AtsushiHosaka.Sai;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -318,11 +440,14 @@
 				DEVELOPMENT_TEAM = 93LJ9T3CBB;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Sai/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "このアプリはカメラを使用します";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "アルバムへ写真を書き込みます";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "アルバムから写真を読み込みます";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +455,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = AtsushiHosaka.Sai;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -358,6 +486,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6D1B8B7129B5B95000085A47 /* XCRemoteSwiftPackageReference "PKHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pkluz/PKHUD";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6D1B8B7229B5B95000085A47 /* PKHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D1B8B7129B5B95000085A47 /* XCRemoteSwiftPackageReference "PKHUD" */;
+			productName = PKHUD;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6D37456929B1995600843CA3 /* Project object */;
 }
