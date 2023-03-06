@@ -35,6 +35,16 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5cP-s9-c49" customClass="CameraButton" customModule="Sai" customModuleProvider="target">
+                                <rect key="frame" x="171" y="475" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <action selector="cameraButtonPressed" destination="BYZ-38-t0r" eventType="touchDown" id="Rrk-Kw-ncB"/>
+                                    <action selector="cameraButtonReleased" destination="BYZ-38-t0r" eventType="touchCancel" id="yPT-0h-78l"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -46,6 +56,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="cameraButton" destination="5cP-s9-c49" id="SNr-VK-fsG"/>
                         <outlet property="cameraView" destination="ijG-nP-JHC" id="3H6-45-JGz"/>
                         <segue destination="5pv-00-CJs" kind="presentation" identifier="toSettingView" modalPresentationStyle="fullScreen" id="jZD-h7-AJf"/>
                         <segue destination="FCU-rB-hxw" kind="presentation" identifier="toEditPhotoView" modalPresentationStyle="fullScreen" id="Vjh-TD-mUt"/>

@@ -25,6 +25,7 @@ class CameraViewController: UIViewController {
     let context = CIContext()
     
     @IBOutlet weak var cameraView: UIImageView!
+    @IBOutlet weak var cameraButton: CameraButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +34,8 @@ class CameraViewController: UIViewController {
         
         setupDevice()
         setupInputOutput()
+        
+        setupUI()
     }
     
     override func viewDidLayoutSubviews() {
@@ -60,6 +63,11 @@ class CameraViewController: UIViewController {
         stopSession()
     }
     
+    private func setupUI() {
+        
+        cameraButton.setupButton()
+    }
+    
     private func getFilterValue() -> Bool {
         
         guard colorDataManager.redFilterArray != nil &&
@@ -75,6 +83,16 @@ class CameraViewController: UIViewController {
     @IBAction func testbutton() {
         
         performSegue(withIdentifier: SegueKey.toSettingView.rawValue, sender: nil)
+    }
+    
+    @IBAction func cameraButtonPressed() {
+        
+        cameraButton.pressed()
+    }
+    
+    @IBAction func cameraButtonReleased() {
+        
+        cameraButton.released()
     }
 }
 
