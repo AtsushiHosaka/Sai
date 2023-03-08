@@ -65,6 +65,7 @@ class CameraViewController: UIViewController {
     
     private func setupUI() {
         
+        cameraButton.delegate = self
         cameraButton.setupButton()
     }
     
@@ -83,16 +84,6 @@ class CameraViewController: UIViewController {
     @IBAction func testbutton() {
         
         performSegue(withIdentifier: SegueKey.toSettingView.rawValue, sender: nil)
-    }
-    
-    @IBAction func cameraButtonPressed() {
-        
-        cameraButton.pressed()
-    }
-    
-    @IBAction func cameraButtonReleased() {
-        
-        cameraButton.released()
     }
 }
 
@@ -206,5 +197,18 @@ extension CameraViewController: AVCaptureVideoDataOutputSampleBufferDelegate {
             let filteredImage = UIImage(cgImage: cgImage)
             self.cameraView.image = filteredImage
         }
+    }
+}
+
+extension CameraViewController: CameraButtonDelegate {
+    
+    func onPressed() {
+        
+        
+    }
+    
+    func onRelased() {
+        
+        
     }
 }
