@@ -29,15 +29,23 @@ class CameraButton: UIView {
         hostingController?.view.backgroundColor = .clear
         hostingController?.view.translatesAutoresizingMaskIntoConstraints = false
         
-//        let button = UIButton(frame: CGRect(x: 0, y: 0, width: self.bounds.width, height: self.bounds.height))
-//
-//        let onPressedAction = UIAction(handler: { _ in self.pressed() })
-//        let onReleasedAction = UIAction(handler: { _ in self.released() })
-//
-//        button.addAction(onPressedAction, for: .touchDown)
-//        button.addAction(onReleasedAction, for: .touchUpInside)
-//
-//        self.addSubview(button)
+        let button = UIButton(frame: CGRect(x: 0, y: 0, width: self.bounds.width, height: self.bounds.height))
+
+        let onPressedAction = UIAction(handler: { _ in self.pressed() })
+        let onReleasedAction = UIAction(handler: { _ in self.released() })
+
+        button.addAction(onPressedAction, for: .touchDown)
+        button.addAction(onReleasedAction, for: .touchUpInside)
+
+        self.addSubview(button)
+    }
+    
+    func pressed() {
+        updateImage(isPressed: true)
+    }
+    
+    func released() {
+        updateImage(isPressed: false)
     }
     
     func updateImage(isPressed: Bool) {
@@ -65,42 +73,42 @@ class CameraButton: UIView {
 //        self.addSubview(button)
     }
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        
-//        updateImage(isPressed: true)
-//        
+//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+//
+////        updateImage(isPressed: true)
+////
+////        if let delegate {
+////            
+////            delegate.onPressed()
+////        }
+//    }
+//
+//    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+//
+//
+//    }
+//
+//
+//
+//    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
+//
+//        updateImage(isPressed: false)
+//
 //        if let delegate {
-//            
-//            delegate.onPressed()
+//
+//            delegate.onRelased()
 //        }
-    }
-    
-    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-        
-        
-    }
-    
-    
-    
-    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
-        
-        updateImage(isPressed: false)
-        
-        if let delegate {
-            
-            delegate.onRelased()
-        }
-    }
-    
-    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        
-        updateImage(isPressed: false)
-        
-        if let delegate {
-            
-            delegate.onRelased()
-        }
-    }
+//    }
+//
+//    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+//
+//        updateImage(isPressed: false)
+//
+//        if let delegate {
+//
+//            delegate.onRelased()
+//        }
+//    }
 }
 
 protocol CameraButtonDelegate {
