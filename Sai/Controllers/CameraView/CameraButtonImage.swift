@@ -10,11 +10,7 @@ import SwiftUI
 struct CameraButtonImage: View {
     
     var radius: Double
-    @State var isPressed: Bool {
-        didSet {
-            print(isPressed)
-        }
-    }
+    @State var isPressed: Bool
     
     var body: some View {
         
@@ -30,15 +26,15 @@ struct CameraButtonImage: View {
                 .fill(.white)
                 .frame(width: isPressed ? radius - 18 : radius - 8)
             
-//                .simultaneousGesture(
-//                    DragGesture(minimumDistance: 0)
-//                        .onChanged({ _ in
-//                            isPressed = true
-//                        })
-//                        .onEnded({ _ in
-//                            isPressed = false
-//                        })
-//                )
+                .simultaneousGesture(
+                    DragGesture(minimumDistance: 0)
+                        .onChanged({ _ in
+                            isPressed = true
+                        })
+                        .onEnded({ _ in
+                            isPressed = false
+                        })
+                )
             
         }
     }

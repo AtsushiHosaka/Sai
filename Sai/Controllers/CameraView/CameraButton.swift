@@ -40,26 +40,6 @@ class CameraButton: UIView {
 //        self.addSubview(button)
     }
     
-//    func pressed() {
-//
-//        updateImage(isPressed: true)
-//
-//        if let delegate {
-//
-//            delegate.onPressed()
-//        }
-//    }
-    
-//    func released() {
-//
-//        updateImage(isPressed: false)
-//
-//        if let delegate {
-//
-//            delegate.onRelased()
-//        }
-//    }
-    
     func updateImage(isPressed: Bool) {
         
         for view in self.subviews {
@@ -87,12 +67,12 @@ class CameraButton: UIView {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
-        updateImage(isPressed: true)
-        
-        if let delegate {
-            
-            delegate.onPressed()
-        }
+//        updateImage(isPressed: true)
+//        
+//        if let delegate {
+//            
+//            delegate.onPressed()
+//        }
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
