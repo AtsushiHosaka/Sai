@@ -25,17 +25,6 @@ struct CameraButtonImage: View {
             Circle()
                 .fill(.white)
                 .frame(width: cameraButtonModel.isPressed ? radius - 18 : radius - 8)
-            
-//                .simultaneousGesture(
-//                    DragGesture(minimumDistance: 0)
-//                        .onChanged({ _ in
-//                            cameraButtonModel.isPressed = true
-//                        })
-//                        .onEnded({ _ in
-//                            cameraButtonModel.isPressed = false
-//                        })
-//                )
-//            
         }
     }
 }
