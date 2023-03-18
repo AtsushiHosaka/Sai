@@ -204,11 +204,10 @@ extension CameraViewController: CameraButtonDelegate {
     
     func onPressed() {
         
-        
+        if let image = cameraView.image {
+            UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
+        }
     }
     
-    func onRelased() {
-        
-        
-    }
+    func onRelased() {}
 }

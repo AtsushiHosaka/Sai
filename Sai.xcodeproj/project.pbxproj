@@ -422,9 +422,9 @@
 				DEVELOPMENT_TEAM = 93LJ9T3CBB;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Sai/Info.plist;
-				INFOPLIST_KEY_NSCameraUsageDescription = "このアプリはカメラを使用します";
-				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "アルバムへ写真を書き込みます";
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "アルバムから写真を読み込みます";
+				INFOPLIST_KEY_NSCameraUsageDescription = "加工した画像を表示するために必要となります";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "撮影した写真をアルバムに保存するために必要となります";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "アルバムの画像を加工するために必要となります";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -456,9 +456,9 @@
 				DEVELOPMENT_TEAM = 93LJ9T3CBB;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Sai/Info.plist;
-				INFOPLIST_KEY_NSCameraUsageDescription = "このアプリはカメラを使用します";
-				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "アルバムへ写真を書き込みます";
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "アルバムから写真を読み込みます";
+				INFOPLIST_KEY_NSCameraUsageDescription = "加工した画像を表示するために必要となります";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "撮影した写真をアルバムに保存するために必要となります";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "アルバムの画像を加工するために必要となります";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

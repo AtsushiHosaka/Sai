@@ -19,26 +19,34 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ijG-nP-JHC">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u48-7S-EGG">
-                                <rect key="frame" x="302" y="59" width="75" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                <connections>
-                                    <action selector="testbutton" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q3u-nh-10n"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1bu-58-2cX">
-                                <rect key="frame" x="40" y="79" width="90" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sai" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1bu-58-2cX">
+                                <rect key="frame" x="32" y="83" width="51.333333333333343" height="41"/>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="31"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FdL-fs-TFG" customClass="CameraButton" customModule="Sai" customModuleProvider="target">
-                                <rect key="frame" x="167" y="579" width="58" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FdL-fs-TFG" customClass="CameraButton" customModule="Sai" customModuleProvider="target">
+                                <rect key="frame" x="167.66666666666666" y="696" width="58" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="58" id="Rfd-og-KxE"/>
+                                    <constraint firstAttribute="height" constant="58" id="nqd-o8-qpe"/>
+                                </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u48-7S-EGG">
+                                <rect key="frame" x="320" y="83" width="41" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="aQy-Ig-S7J"/>
+                                    <constraint firstAttribute="width" constant="41" id="ojC-03-Pi4"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="gearshape.fill" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="26"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="testbutton" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q3u-nh-10n"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -46,7 +54,13 @@
                             <constraint firstItem="ijG-nP-JHC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4bx-F2-zE6"/>
                             <constraint firstAttribute="bottom" secondItem="ijG-nP-JHC" secondAttribute="bottom" id="5Is-Ki-vUI"/>
                             <constraint firstItem="ijG-nP-JHC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="9YK-6O-GDu"/>
+                            <constraint firstItem="u48-7S-EGG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="V6N-Qz-clH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FdL-fs-TFG" secondAttribute="bottom" constant="64" id="ck0-UZ-ZGQ"/>
+                            <constraint firstItem="FdL-fs-TFG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="k8M-Sy-gxE"/>
+                            <constraint firstItem="1bu-58-2cX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="kPq-Ys-S2h"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="u48-7S-EGG" secondAttribute="trailing" constant="32" id="rPP-O9-Bt9"/>
                             <constraint firstItem="ijG-nP-JHC" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="rur-KV-7ry"/>
+                            <constraint firstItem="1bu-58-2cX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="zlh-Na-SdY"/>
                         </constraints>
                     </view>
                     <connections>
@@ -280,6 +294,7 @@
     </scenes>
     <resources>
         <image name="chevron.left" catalog="system" width="97" height="128"/>
+        <image name="gearshape.fill" catalog="system" width="128" height="123"/>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
