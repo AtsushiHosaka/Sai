@@ -8,27 +8,32 @@
 import UIKit
 import SwiftUI
 
+class CameraButtonModel: ObservableObject {
+    @Published var isPressed: Bool = false
+}
+
 class CameraButton: UIView {
+    
+    var cameraButtonModel = CameraButtonModel()
     
     var delegate: CameraButtonDelegate? = nil
     
     var hostingController: UIHostingController<CameraButtonImage>?
-    var cameraButtonImage: CameraButtonImage?
     
     func setupButton() {
-        
+
         for view in self.subviews {
             view.removeFromSuperview()
         }
-        
-        cameraButtonImage = CameraButtonImage(radius: min(self.bounds.width, self.bounds.height), isPressed: false)
-        
-        hostingController = UIHostingController(rootView: cameraButtonImage!)
+
+        let cameraButtonImage = CameraButtonImage(radius: min(self.bounds.width, self.bounds.height), cameraButtonModel: cameraButtonModel)
+
+        hostingController = UIHostingController(rootView: cameraButtonImage)
         self.addSubview(hostingController!.view)
-        
+
         hostingController?.view.backgroundColor = .clear
         hostingController?.view.translatesAutoresizingMaskIntoConstraints = false
-        
+
         let button = UIButton(frame: CGRect(x: 0, y: 0, width: self.bounds.width, height: self.bounds.height))
 
         let onPressedAction = UIAction(handler: { _ in self.pressed() })
@@ -50,18 +55,16 @@ class CameraButton: UIView {
     
     func updateImage(isPressed: Bool) {
         
-        for view in self.subviews {
-            view.removeFromSuperview()
-        }
+        cameraButtonModel.isPressed = isPressed
+//        let cameraButtonImage = CameraButtonImage(radius: min(self.bounds.width, self.bounds.height), isPressed: isPressed)
         
-        cameraButtonImage = CameraButtonImage(radius: min(self.bounds.width, self.bounds.height), isPressed: isPressed)
+//        hostingController = UIHostingController(rootView: cameraButtonImage)
         
-        hostingController = UIHostingController(rootView: cameraButtonImage!)
-        self.addSubview(hostingController!.view)
+//        self.addSubview(hostingController!.view)
         
-        hostingController?.view.backgroundColor = .clear
-        hostingController?.view.translatesAutoresizingMaskIntoConstraints = false
-        
+//        hostingController?.view.backgroundColor = .clear
+//        hostingController?.view.translatesAutoresizingMaskIntoConstraints = false
+//
 //        let button = UIButton(frame: CGRect(x: 0, y: 0, width: self.bounds.width, height: self.bounds.height))
 //
 //        let onPressedAction = UIAction(handler: { _ in self.pressed() })
@@ -78,7 +81,7 @@ class CameraButton: UIView {
 ////        updateImage(isPressed: true)
 ////
 ////        if let delegate {
-////            
+////
 ////            delegate.onPressed()
 ////        }
 //    }
